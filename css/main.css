@@ -1,0 +1,135 @@
+@charset "utf-8";
+/*==================================================
+	各ページ固有のスタイルを記述
+==================================================*/
+/* 枠のマージン・パディング */
+.mb {
+	margin-bottom: 80px;
+}
+.pt {
+	padding-top: 80px;
+}
+.pb {
+	padding-bottom: 80px;
+}
+/* 横100％背景 */
+.bg_wide {
+	position: relative;
+}
+.bg_wide::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100vw;
+	height: 100%;
+	margin-left: calc(((100vw - 100%) / 2) * -1);
+	margin-right: calc(((100vw - 100%) / 2) * -1);
+	content: "";
+	z-index: -1;
+}
+@media only screen and (max-width: 1150px) {
+	.bg_wide::before {
+		width: calc(100% + 50px);
+		margin-left: -25px;
+		margin-right: 0;
+	}
+}
+/*--------------------------------------------------
+  トップページ
+--------------------------------------------------*/
+/* メッセージ */
+#top_msg p {
+	line-height: 2;
+}
+/* コンテンツ */
+#top_contents::before {
+	background: #EEE;
+}
+/* メニューコンテンツ */
+#top_menu dl dd .btn {
+	text-align: center;
+	margin-bottom: 0;
+}
+#top_menu dl dd .btn a {
+	font-size: 17px;
+	display: inline-block;
+	text-align: center;
+	background: #f8c758;
+	border-radius: 20px;
+	color: #fff;
+	padding: 6.5px 15px;
+}
+/* お知らせ */
+#top_info {
+}
+#top_info dl {
+	clear: both;
+}
+#top_info dt {
+	float: left;
+	width: 100px;
+}
+#top_info dd {
+	margin-left: 100px;
+	margin-bottom: 16px;
+	padding-bottom: 6px;
+	border-bottom: 1px dashed #CCCCCC;
+}
+/*--------------------------------------------------
+	サブページ
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+	サブページ
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+	サブページ
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+	お問い合せ
+--------------------------------------------------*/
+#mailform .tbl {
+	margin: 20px 0;
+}
+#mailform .tbl th {
+	vertical-align: top;
+}
+#mailform .tbl th .need {
+	float: right;
+	padding: 1px 10px;
+	background: #fa8296;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 13px;
+}
+#mailform .btn input {
+	width: 200px;
+	height: 50px;
+	background: #3D9600;
+	border: 1px solid #3D9600;
+	border-radius: 30px;
+	box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	cursor: pointer;
+}
+#mailform .btn input+input {
+	background: #F4F4F4;
+	border-color: #DDDDDD;
+	color: #666666;
+}
+#mailform .tbl input[type="text"], #mailform .tbl textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+#mailform .tbl textarea {
+	display: block;
+}
+#mailform .tbl input.wno {
+	width: 100px;
+}

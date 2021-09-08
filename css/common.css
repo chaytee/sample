@@ -1,0 +1,338 @@
+@charset "utf-8";
+/*==================================================
+	設定部
+----------------------------------------------------
+  WEBフォント指定
+--------------------------------------------------*/
+/* TOPページコーディング時に修正 使用しないフォントは削除すること (削除し終えたらこのコメントも削除すること) */
+#header .contact .tel,
+#footer .contact .tel,
+#container h3.sub,
+#container .mp {
+	font-family: 'M PLUS 1p', sans-serif;
+}
+#container .mpr {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#container .sans {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+#container .serif {
+	font-family: 'Noto Serif JP', serif;
+}
+/*--------------------------------------------------
+  フォント色指定
+--------------------------------------------------*/
+.red { color: #FF0000; }	/* 赤 */
+.pick { color: #0200FF; }	/* 注目色 */
+.thin { color: #666666; }	/* 薄い色 */
+/* リンク */
+a:link, a:visited,
+#header .contact .tel,
+#footer .contact .btn a {
+	color: #0200FF;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*--------------------------------------------------
+  背景・ボーダー色指定
+--------------------------------------------------*/
+/* メニュー */
+#menu li.on a,
+#menu li a:hover {
+	border-color: #0200FF;
+}
+/* メールボタン */
+#header .contact .btn {
+	background: #0200FF;
+}
+/* 見出し下ボーダー */
+#container h3.sub:before {
+	background: #0200FF;
+}
+/* フッタ */
+#footer {
+	background-color: #FF00F5;
+}
+#footer .contact {
+	background-color: #1AFF00;
+}
+#footer .box {
+	background-color: #FFF;
+}
+/*-- タブレット・スマホに適応 --*/
+@media only screen and (max-width: 768px) {
+	/* ハンバーガーメニュー */
+	#switchBtnArea #switchBtn {
+		background: #1AFF00;
+	}
+	/* 電話ボタン */
+	#header .contact .tel {
+		background: #FF00F5;
+	}
+}
+/*==================================================
+  ヘッダ
+--------------------------------------------------*/
+#header {
+	height: 70px;
+	padding: 15px;
+	text-align: left;
+}
+/* タイトル */
+#header h1.title {
+	float: left;
+	height: 70px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+/* お問い合わせ */
+#header .contact a img {
+	vertical-align: middle;
+}
+#header .contact .tel {
+	font-size: 23px;
+	vertical-align: middle;
+}
+#header .contact .txt {
+	margin: 0 20px;
+	color: #666;
+	font-size: 12px;
+}
+#header .contact .btn {
+	color: #FFF;
+	font-size: 16px;
+	vertical-align: middle;
+}
+/*--------------------------------------------------
+  メニュー
+--------------------------------------------------*/
+#menu {
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+}
+#menu ul {
+	overflow: hidden;
+	background: url(../img/menu/line.png) no-repeat right top;
+}
+#menu li {
+	float: left;
+	width: auto;
+	background: url(../img/menu/line.png) no-repeat left top;
+	list-style: none;
+}
+#menu li a {
+	display: block;
+	padding: 0 30px 14px;
+	color: #333333;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: center;
+	text-decoration: none;
+}
+#menu li.on a,
+#menu li a:hover {
+	padding-bottom: 10px;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	filter:alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+/*--------------------------------------------------
+  ページタイトル
+--------------------------------------------------*/
+#page_title {
+	overflow: hidden;
+	position: relative;
+	/* background: #EEEEEE; */
+	text-align: center;
+}
+#page_title p {
+	text-align: center;
+}
+/* シャドウ */
+#page_title:before,
+#page_title:after {
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 1px;
+	content: "";
+}
+#page_title:before {
+	top: 0;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+#page_title:after {
+	bottom: 0;
+	box-shadow: 0px -3px 8px rgba(0,0,0,0.2);
+}
+/*--------------------------------------------------
+  コンテナ
+--------------------------------------------------*/
+#container {
+	overflow: hidden;
+	text-align: left;
+	line-height: 1.6;
+}
+#container p {
+	margin-bottom: 1em;
+}
+#container p.nm {
+	margin-bottom: 0;
+}
+#container h3.sub {
+	position: relative;
+	margin-bottom: 40px;
+	padding-bottom: 5px;
+	font-size: 23px;
+	font-weight: normal;
+	text-align: center;
+}
+#container h3.sub:before {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	display: block;
+	width: 50px;
+	height: 2px;
+	margin-left: -25px;
+	content: "";
+}
+/*--------------------------------------------------
+  メイン
+--------------------------------------------------*/
+.main {
+	clear: both;
+}
+/*--------------------------------------------------
+  フッタ
+--------------------------------------------------*/
+#footer {
+	clear: both;
+	width: 100%;
+	box-shadow: 0px -3px 10px rgba(0,0,0,0.1);
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 1.6;
+}
+#footer p {
+	text-align: center;
+}
+#footer .box {
+	padding: 30px 0;
+	color: #333;
+}
+#footer .box dt {
+	margin-bottom: 40px;
+}
+/* お問い合わせ */
+#footer .contact {
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#footer .contact .txt {
+	font-size: 20px;
+	line-height: 1.4;
+}
+#footer .contact .txt span {
+	display: block;
+	font-size: 15px;
+}
+#footer .contact a img {
+	width: 38px;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+#footer .contact .tel {
+	margin: 0 30px;
+}
+#footer .contact .tel a {
+	color: #FFF;
+	font-size: 36px;
+}
+#footer .contact .tel img {
+	position: relative;
+	top: -5px;
+}
+#footer .contact .btn a {
+	display: inline-block;
+	padding: 7px 25px;
+	border-radius: 5px;
+	background: #FFF;
+	box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+	font-size: 16px;
+}
+#footer .contact .btn img {
+	width: 23px;
+}
+/* リンク */
+#footer ul {
+	height: 84px;
+	border-bottom: 1px solid #FFF;
+	line-height: 84px;
+}
+#footer ul li {
+	display: inline;
+	margin-right: 20px;
+	padding-left: 20px;
+	list-style: none;
+}
+#footer ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#footer ul li a:hover {
+	text-decoration: underline;
+}
+/* コピーライト */
+#copyright {
+	height: 52px;
+	line-height: 52px;
+}
+/*--------------------------------------------------
+  共通
+--------------------------------------------------*/
+/* パンくずリスト */
+#page_navi {
+	clear: both;
+	margin-bottom: 40px;
+	padding-top: 30px;
+	color: #999;
+	font-size: 12px;
+	line-height: 1;
+}
+#page_navi li {
+	display: inline;
+}
+#page_navi li+li {
+	margin-left: 8px;
+}
+#page_navi li+li:before {
+	content: ">";
+	margin-right: 8px;
+}
+#page_navi a { text-decoration: none; color: #888888; }
+/* テーブル */
+.tbl {
+	width: 100%;
+}
+.tbl th,
+.tbl td {
+	padding: 10px;
+	border: 1px solid #BBBBBB;
+}
+.tbl th {
+	white-space: nowrap;
+	background: #EEEEEE;
+}
+/* 注意書き */
+p.attention {
+	margin-left: 1em;
+	text-indent: -1em;
+}

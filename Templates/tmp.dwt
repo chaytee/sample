@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+<!-- TemplateBeginEditable name="doctitle" -->
+	<title>タイトル</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!-- TemplateEndEditable -->
+	<link type="text/css" href="../css/impstyle.css" rel="stylesheet">
+	<link type="text/css" href="../css/tablet.css" rel="stylesheet">
+	<link type="text/css" href="../css/smart.css" rel="stylesheet">
+	<link type="text/css" href="../css/pc.css" rel="stylesheet">
+	<script src="../js/respond.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/menu.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<div id="wrap">
+	<header id="header" class="cf">
+		<div id="sticky">
+<!-- TemplateBeginEditable name="description" -->
+			<h1 class="title"><a href="../index.html"><img src="../img/title.png" alt="タイトル"></a></h1>
+<!-- TemplateEndEditable -->
+			<div class="contact">
+				<p><a href="tel:" class="tel"><img src="../img/tel.png" alt="電話"><span>00-0000-0000</span></a><span class="txt">受付時間 00:00-00:00</span><a href="../contact.html" class="btn"><img src="../img/mail_w.png" alt="メール"><span>メールフォーム</span></a></p>
+			</div>
+		</div>
+		<nav id="menu">
+			<ul>
+<!-- TemplateBeginEditable name="menu" -->
+				<li><a href="../index.html">ホーム</a></li>
+				<li><a href="../index.html">サブページ</a></li>
+				<li><a href="../index.html">サブページ</a></li>
+				<li><a href="../index.html">サブページ</a></li>
+<!-- TemplateEndEditable -->
+			</ul>
+		</nav>
+	</header>
+	<section id="container" class="cf">
+		<div id="page_title">
+<!-- TemplateBeginEditable name="main_img" -->
+			<h2><img src="../img/top/title.jpg" alt=""></h2>
+<!-- TemplateEndEditable -->
+		</div>
+<!-- TemplateBeginEditable name="main" -->
+		<div class="main">
+			<ul id="page_navi">
+				<li><a href="/">ホーム</a></li><li>サブページ</li>
+			</ul>
+		</div>
+<!-- TemplateEndEditable -->
+	</section>
+</div>
+<footer id="footer">
+	<div class="contact">
+		<p class="txt">お問合せはこちら<span>受付時間 00:00-00:00</span></p>
+		<p class="tel"><a href="tel:"><img src="../img/tel_w.png" alt="電話"><span>00-0000-0000</span></a></p>
+		<p class="btn"><a href="../contact.html"><img src="../img/mail.png" alt="メール"><span>メールフォーム</span></a></p>
+	</div>
+	<div class="box">
+		<dl class="in">
+			<dt><a href="../index.html"><img src="../img/title.png" alt="タイトル"></a></dt>
+			<dd>
+				<p>〒000-0000 □□□□□□□□□□□□□□□□□□□</p>
+				<p>【営業時間】00:00～00:00</p>
+				<p>【定休日】□曜日</p>
+			</dd>
+		</dl>
+	</div>
+	<ul class="dsp_hp">
+		<li><a href="../index.html">ホーム</a></li>
+		<li><a href="../index.html">サブページ</a></li>
+		<li><a href="../index.html">サブページ</a></li>
+		<li><a href="../contact.html">お問合せ</a></li>
+	</ul>
+	<p id="copyright">Copyright &copy; 2021 タイトル. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

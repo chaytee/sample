@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*==================================================
+	タブレットのみ適応
+==================================================*/
+@media only screen and (max-width: 768px) and (min-width: 641px){
+	.dsp_smt { display: none; }
+	#footer .contact .txt span {
+		display: inline-block;
+		margin-left: 10px;
+	}
+}
+/*==================================================
+	タブレット・スマホに適応
+==================================================*/
+@media only screen and (max-width: 768px) {
+	.dsp_hp { display: none; }
+
+	/* ヘッダ */
+	#header {
+		overflow: hidden;
+		height: 50px;
+		padding: 0;
+		background: #fff;
+	}
+	#header h1.title {
+		height: 50px;
+		padding-left: 10px;
+	}
+	#header p.title img {
+		width: auto;
+		max-height: 30px;
+	}
+	#sticky {
+		z-index: 9997;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	}
+	/* お問い合わせ */
+	#header .contact {
+		position: relative;
+	}
+	#header .contact .tel,
+	#header .contact .btn {
+		position: absolute;
+		top: 0;
+		right: 90px;
+		display: block;
+		width: 24px;
+		height: 50px;
+		padding: 0 11px;
+		/* 縦方向中央揃え */
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+		align-items: center; /* 縦方向中央揃え */
+		-webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+		justify-content: center; /* 横方向中央揃え */
+	}
+	#header .contact .btn {
+		right: 44px;
+	}
+	#header .contact .txt,
+	#header .contact .tel span,
+	#header .contact .btn span {
+		display: none;
+	}
+	/* コンテナ */
+	#container h3.sub {
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+	.main {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#main, #navi {
+		clear: both;
+		padding-bottom: 30px;
+	}
+	/* フッター */
+	#footer .box dt {
+		margin-bottom: 20px;
+	}
+	#copyright {
+		height: 30px;
+		line-height: 30px;
+	}
+	/* パンくずリスト */
+	#page_navi {
+		margin-bottom: 20px;
+		padding-top: 15px;
+		font-size: 11px;
+	}
+	/* 枠のマージン・パディング */
+	.mb { margin-bottom: 40px; }
+	.pt { padding-top: 40px; }
+	.pb { padding-bottom: 40px; }
+	/* アンカーリンク用上部スペース */
+	.pad_anchor {
+		margin-top: -50px;
+		padding-top: 50px;
+	}
+	/*--------------------------------------------------
+		トップページ
+	--------------------------------------------------*/
+	/* メニューコンテンツ */
+	#top_menu dl dt {
+		float: left;
+		width: 30%;
+	}
+	#top_menu dl dd {
+		padding-top: 20px;
+		margin-left: 33%;
+	}
+	
+	/*--------------------------------------------------
+		お問い合せ
+	--------------------------------------------------*/
+	#mailform .tbl {
+		border-bottom: 1px solid #BBB;
+	}
+	#mailform .tbl th,
+	#mailform .tbl td {
+		display: block;
+		width: auto;
+		border-bottom: none;
+	}
+	#mailform .tbl input[type="text"],
+	#mailform .tbl textarea {
+		font-size: 120%;
+	}
+	#mailform .btn input {
+		width: 120px;
+	}
+
+/*------------------------------------------------*/
+}

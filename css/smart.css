@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*==================================================
+	スマホのみに適用
+==================================================*/
+@media only screen and (max-width: 640px){
+	body { font-size: 85%; }
+	.dsp_hp, .dsp_hpt { display: none; }
+
+	/* ヘッダ */
+	#header p.title img {
+		max-height: 25px;
+	}
+	/* コンテナ */
+	#wrap, #footer {
+		min-width: 320px;
+	}
+	#container h3.sub {
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+	/* フッター */
+	#footer .contact .tel a {
+		font-size: 30px;
+	}
+	#footer .box dt img {
+		max-width: 250px;
+	}
+	#copyright {
+		height: auto;
+		line-height: 1.6;
+		padding: 5px 0;
+	}
+	/* 枠のマージン・パディング */
+	.mb { margin-bottom: 30px; }
+	.pt { padding-top: 30px; }
+	.pb { padding-bottom: 30px; }
+	/*--------------------------------------------------
+		トップページ
+	--------------------------------------------------*/
+	/* メニューコンテンツ */
+	#top_menu .box {
+		margin-bottom: 30px;
+	}
+	#top_menu dl dt {
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+	#top_menu dl dd {
+		margin-left: 0;
+	}
+	/* お知らせ */
+	#top_info dt {
+		float: none;
+		width: auto;
+	}
+	#top_info dd {
+		margin-left: 0;
+	}
+
+/*------------------------------------------------*/
+}
