@@ -39,7 +39,7 @@ a:link, a:visited,
 /* メニュー */
 #menu li.on a,
 #menu li a:hover {
-	border-color: #0200FF;
+	border-color: #000;
 }
 /* メールボタン */
 #header .contact .btn {
